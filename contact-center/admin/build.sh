@@ -7,7 +7,7 @@
 baseDir=$(cd `dirname "$0"`;pwd)
 appHome=$baseDir/..
 registryPrefix=
-imagename=cskefu/contact-center
+imagename=djflying1988/contact-center
 
 # functions
 
@@ -16,7 +16,7 @@ imagename=cskefu/contact-center
 # build
 cd $appHome
 if [ -d ../private ]; then
-    registryPrefix=dockerhub.qingcloud.com/
+    registryPrefix=hub.docker.com/
 fi
 
 TIMESTAMP=`date "+%Y%m%d.%H%M%S"`
